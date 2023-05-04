@@ -1,0 +1,94 @@
+.special {
+  padding: 0 210px;
+}
+
+.specials-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.specials-top button {
+  background-color: #f4ce14;
+  font-weight: bold;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  width: 150px;
+}
+
+.specials-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #edefee;
+  height: 470px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.card-img {
+  max-height: 130px;
+  overflow: hidden;
+}
+
+.card-img img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: fill;
+  border-radius: 10px 10px 0 0;
+}
+
+.dish-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.dish-name-price h5 {
+  color: #eea786;
+}
+
+.card p {
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+.card h4 {
+  padding: 0 20px;
+  margin-top: 60px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .special {
+    padding: 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 200px;
+    height: 430px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .specials-top {
+    margin-top: 30px;
+  }
+
+  .specials-bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .card {
+    width: 90%;
+    height: 400px;
+  }
+}

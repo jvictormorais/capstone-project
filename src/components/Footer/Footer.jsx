@@ -1,9 +1,10 @@
 import React from "react";
-import logo from "../assets/Logo.svg";
+import logo from "../../assets/Logo.svg";
+import "./footer.css";
 
 const Footer = () => {
   return (
-    <section>
+    <footer>
       <img src={logo} alt="little lemon" />
       <div>
         <h5>Doormat Navigation</h5>
@@ -50,7 +51,7 @@ const Footer = () => {
           </ul>
         </nav>
       </div>
-    </section>
+    </footer>
   );
 };
 
