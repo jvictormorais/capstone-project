@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/Logo.svg";
 import hamburgerMenu from "../../assets/hamburgermenu.svg";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
         <img className="hamburger" src={hamburgerMenu} alt="Hamburguer Menu" />
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <a href="/">About</a>
@@ -20,7 +21,7 @@ const Header = () => {
             <a href="/">Menu</a>
           </li>
           <li>
-            <a href="/">Reservations</a>
+            <Link to="/booking">Reservations</Link>
           </li>
           <li>
             <a href="/">Order Online</a>

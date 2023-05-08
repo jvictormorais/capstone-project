@@ -1,6 +1,7 @@
 import React from "react";
 import heroImg from "../../assets/restauranfood.jpg";
 import "./hero.css";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="hero-section">
@@ -14,7 +15,9 @@ const Hero = () => {
           <br />
           focused on traditional racipes served with a modern twist.
         </p>
-        <button>Reserve a Table</button>
+        <Link to="/booking">
+          <button>Reserve a Table</button>
+        </Link>
       </div>
       <div className="hero-right">
         <img src={heroImg} alt="retaurn food" />
